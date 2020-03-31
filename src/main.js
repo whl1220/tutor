@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import './icon/iconfont.css'
+
 import {Tabbar,TabbarItem} from 'vant'
 Vue.use(Tabbar).use(TabbarItem)
 
