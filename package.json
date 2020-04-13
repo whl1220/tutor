@@ -24,5 +24,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whl1220/tutor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whl1220/tutor/issues"
+  },
+  "homepage": "https://github.com/whl1220/tutor#readme"
 }
