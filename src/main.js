@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import './icon/iconfont.css'
+
+import {Tabbar,TabbarItem} from 'vant'
+Vue.use(Tabbar).use(TabbarItem)
+
 import {Tabbar,TabbarItem,NavBar,Dialog,Popup,Area,Search,Swipe, SwipeItem,DropdownMenu, DropdownItem} from 'vant'
 Vue.use(Tabbar).use(TabbarItem).use(NavBar).use(Dialog).use(Popup).use(Area).use(Search).use(Swipe).use(SwipeItem).use(DropdownMenu).use(DropdownItem);
 
