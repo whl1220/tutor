@@ -11,9 +11,12 @@ import SignUp from '../views/home/SignUp.vue'
 import SignUp2 from '../views/home/SignUp2.vue'
 
 import Find from '../views/Find.vue'
+import TreeHole from '../views/TreeHole.vue'
+import TreeHoleEdit from '../views/TreeHoleEdit.vue'
 
 import Release from  '../views/Release.vue'
-
+import ReleaseTeacher from '../views/ReleaseTeacher.vue'
+import ReleaseStudent from '../views/ReleaseStudent.vue'
 import Mine from '../views/Mine.vue'
 
 
@@ -41,6 +44,14 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+
+    path: '/',    
+    redirect: '/home',
+  },
+  {
+    path: '/home',
+    name: 'home',
+    component: Home
     path: '/',
     name: 'home',
     component: Home,
@@ -58,6 +69,35 @@ const routes = [
     path: '/find',
     name: 'find',
     component: Find,
+  },
+  {
+    path: '/hole',
+    name: 'tree_hole',
+    component: TreeHole,
+  },
+  {
+    path: '/hole_edit',
+    component: TreeHoleEdit
+  },
+  {
+    path: '/release',
+    component: Release,
+    children: [
+      {
+        path: 'teacher',
+        name: 'release_teacher',
+        component: ReleaseTeacher
+      },
+      {
+        path: 'student',
+        name: 'release_student',
+        component: ReleaseStudent
+      },
+      {
+        path: '',
+        redirect: 'teacher',
+      }
+    ]
     meta: { 
       showFooter: true
      }
@@ -74,6 +114,7 @@ const routes = [
     meta: { 
       showFooter: true
      }
+
   },
   {
     path: '/mine',
