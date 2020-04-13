@@ -50,20 +50,7 @@ const routes = [
   },
   {
     path: '/home',
-    name: 'home',
     component: Home
-    path: '/',
-    name: 'home',
-    component: Home,
-    meta: { 
-      showFooter: true
-     }
-  },
-  {
-    path: '/home',
-    redirect: '/',meta: { 
-      showFooter: true
-     }
   },
   {
     path: '/find',
@@ -98,9 +85,6 @@ const routes = [
         redirect: 'teacher',
       }
     ]
-    meta: { 
-      showFooter: true
-     }
   },
   {
     path:'/home/search',
@@ -111,18 +95,11 @@ const routes = [
     path: '/release',
     name: 'release',
     component: Release,
-    meta: { 
-      showFooter: true
-     }
-
   },
   {
     path: '/mine',
     name: 'mine',
     component: Mine,
-    meta: { 
-      showFooter: true
-     }
   },
   {
     path: '/login',
@@ -173,8 +150,7 @@ const routes = [
     path: '/personal',
     name: 'personal',
     component: Personal
-
-    component: Mine
+    // component: Mine
   },
   {
     path: '/teacherdetails',
@@ -203,12 +179,12 @@ const routes = [
   },
   {
     path:'/signup',
-    name:SignUp,
+    // name:SignUp,
     component:SignUp
   },
   {
     path:'/signup2',
-    name:SignUp2,
+    // name:SignUp2,
     component:SignUp2
   }
 ]
