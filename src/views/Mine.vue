@@ -54,11 +54,15 @@
             <div class="apply">
             </div>
         </div>
+        <NavBottom/>
     </div>
 </template>
-
 <script>
+import NavBottom from '../components/NavBottom'
 export default {
+    components:{
+        NavBottom
+    },
     data () {
         return {
             navList: [
