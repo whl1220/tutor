@@ -2,7 +2,7 @@
     <div id="search">
         <div class="header">
             <div> <img class="arrow" @click="goback" src="../../assets/image/arrow.png" alt=""></div>
-            <input type="search" value="请搜索关键词">
+            <input type="search" placeholder="请搜索关键词">
             <span >搜索</span>
         </div>
 
@@ -110,14 +110,12 @@
     }
     input{
         width:6rem;
-        height:0.4rem;
-        background:  #ccc;
+        height:0.6rem;
         font-size:0.24rem;
         border: 1px solid #ccc; 
-        border-radius: 0.2rem;  
+        border-radius: 0.3rem;  
         padding-left:0.1rem;
-        margin-top: 0.64rem;
-        color:#666666;
+        margin-top: 0.5rem;
     }
     span{
         font-size:0.24rem;
@@ -126,11 +124,15 @@
         margin-left:0.1rem;
     }
     .content{
-        width:100%;
+        width:7.1rem;
         height:2rem;
         margin-top:0.15rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        border-radius: 10px;
         background: #ffff;
         display: flex;
+        overflow:hidden;
     }
     .people{
         width: 1.5rem;
